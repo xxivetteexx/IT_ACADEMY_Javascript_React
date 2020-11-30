@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicio</title>
+</head>
+<body>
+    <script>
+        //Declaro las variables con prompts
+        let valor1=parseInt(prompt("Introduce un número"));
+        let valor2= parseInt(prompt("Introduce otro número"));
+        let operador= prompt("Introduce la operación que quieres realizar (sumar,restar o multiplicar)");
+        
+        //Realizo la función calculadora con la función if
+        function calculadora (operador, valor1, valor2) {
+            if (operador == 'sumar') {
+                return(valor1 + valor2);
+            } 
+
+            else if (operador == 'restar') {
+                return(valor1 - valor2);
+
+            }
+            else if (operador == 'multiplicar') {
+                return(valor1 * valor2);
+            }
+            else {
+                 alert('No has introducido un valor valido');
+            }
+        }
+       
+        let resultado = calculadora(operador, valor1, valor2);
+            alert('El resultado es ' + resultado + " .");
+
+        
+
+    </script>
+    
+</body>
+</html>

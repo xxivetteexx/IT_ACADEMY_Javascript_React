@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reemplaça</title>
+</head>
+<body>
+    <script>
+    //Declaro una constante donde iremos cambiando carácteres
+    const p = 'Tinc un cotxe de color blau';
+    console.log(p);
+    //Llamo a la función "replace" para hacer el intercambio entre "blau" y "verd"
+    console.log(p.replace('blau', 'verd'));
+
+    //Regex = expresiones regulares. Ayudan a describir secuencias de caracteres.
+    const regex = /o/gi;
+    console.log(p.replace(regex, 'u'));
+
+    </script>
+    
+</body>
+</html>
